@@ -5,14 +5,8 @@ import PostStatusFilter from '../post-status-filter';
 import PostList from '../post-list';
 import PostAddForm from '../post-add-form';
 
-import '../../app.css';
-import '../../app-header.css';
-import '../../index.css';
-import '../../post-add-form.css';
-import '../../post-list.css';
-import '../../post-list-item.css';
-import '../../post-status-filter.css';
-import '../../search-panel.css';
+import './app.css';
+
 
 const App = () => {
 	return (
