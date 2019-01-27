@@ -11,7 +11,8 @@ import './app.css';
 const App = () => {
 	
 	const data = [
-		
+		null,
+		NaN,
 		[],
 		'string',
 		[1, 2, 'array'],
@@ -19,6 +20,7 @@ const App = () => {
 		{label: 'Going to learn React', imporant: true, id: 'kjk'},
 		{label: 'That is so good', imporant: false, id: 'jkhyg'},
 		{label: 'I need a break...', imporant: false, id:'ghytf'}
+
 
 	]
 	return (
