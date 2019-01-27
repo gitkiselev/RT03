@@ -1,13 +1,29 @@
 import React from 'react';
 import PostListItem from '../post-list-item';
 import './post-list.css';
-const PostList = () => {
-	return (
-		<ul className="app-list list-group">
-			<PostListItem />
-			<PostListItem />
-			<PostListItem />
-		</ul>
+/*function isObject(val){
+	if(typeof item === 'object' && item !== null && !Array.isArray(item)){
+		return true;
+	}
+	return false;
+}*/
+const PostList = ({posts}) => {
+	const elements = posts.map((item) => {
+		
+		const {id, ...itemProps} = item;
+		if(typeof item === 'object' && item !== null && !Array.isArray(item)){
+			return (
+			<li key={id} className="list-group-item">
+				<PostListItem {...itemProps}/>
+			</li>
+			)
+		}
+		
+		});
+		return (
+			<ul className="app-list list-group">
+				{elements}
+			</ul>
 		)
 }
 export default PostList;
