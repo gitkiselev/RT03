@@ -5,16 +5,11 @@ import PostStatusFilter from '../post-status-filter';
 import PostList from '../post-list';
 import PostAddForm from '../post-add-form';
 import idGenerator from 'react-id-generator';
-import './app.css';
-//import style from './App.module.css';
 import styled from 'styled-components';
 
 const AppBlock = styled.div`
-	.app {
 	  margin: 0 auto;
 	  max-width: 800px;
-	}
-
 `
 const StyledAppBlock = styled(AppBlock)`
 	background-color: transparent;
